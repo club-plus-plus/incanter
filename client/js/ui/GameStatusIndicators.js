@@ -36,6 +36,10 @@ function GameStatusIndicators(gameEngine, uiElements, elementImages)
 	//Build the element status table
 	this.elementChargeTableCells = {};
 	this.buildElementStatusTable(elementImages);
+	
+	//Create the player and opponent health bars
+	this.playerHealthBar   = new HealthBarRenderer(this.uiElements.playerHealthBar);
+	this.opponentHealthBar = new HealthBarRenderer(this.uiElements.opponentHealthBar);
 }
 
 GameStatusIndicators.prototype.buildElementStatusTable = function(elementImages)
@@ -66,8 +70,12 @@ GameStatusIndicators.prototype.buildElementStatusTable = function(elementImages)
 GameStatusIndicators.prototype.update = function()
 {
 	//Update the player and opponent health indicators
-	this.uiElements.playerHealth.text( this.gameEngine.gameState.getClientPlayer().health );
-	this.uiElements.opponentHealth.text( this.gameEngine.gameState.getPeerPlayer().health );
+	var playerHealth   = this.gameEngine.gameState.getClientPlayer().health;
+	var opponentHealth = this.gameEngine.gameState.getPeerPlayer().health;
+	this.uiElements.playerHealth.text(playerHealth);
+	this.uiElements.opponentHealth.text(opponentHealth);
+	this.playerHealthBar.setHealth(playerHealth);
+	this.opponentHealthBar.setHealth(opponentHealth);
 	
 	//Update the table of element charges
 	var hotspots = this.gameEngine.getMotionHotspots();

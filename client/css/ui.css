@@ -256,3 +256,26 @@ ul.peerList li:hover
 	background-color: #fff;
 	padding: 1em;
 }
+
+.healthBar
+{
+	float: right;
+	position: relative;
+	display: inline-block;
+	width: 12em;
+	height: 1.5em;
+	border: 1px solid #aaa;
+}
+
+.healthLevel
+{
+	line-height: 1.5em;
+	display:     block;
+	position:    absolute;
+	top:         0;
+	left:        0;
+	width:       100%;
+	height:      100%;
+	text-align:  center;
+	z-index:     999999;
+}

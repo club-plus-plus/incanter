@@ -41,6 +41,7 @@
 		<script type="text/javascript" src="./js/ui/VolumeLevelRenderer.js"></script>
 		<script type="text/javascript" src="./js/ui/OverlayCompositingManager.js"></script>
 		<script type="text/javascript" src="./js/ui/ImageOverlayMotionObserver.js"></script>
+		<script type="text/javascript" src="./js/ui/HealthBarRenderer.js"></script>
 		<script type="text/javascript" src="./js/ui/GameStatusIndicators.js"></script>
 		<script type="text/javascript" src="./js/ui/DebugMotionVisualiser.js"></script>
 		<script type="text/javascript" src="./js/ui/DebugOutput.js"></script>
@@ -100,7 +101,9 @@
 					peerMediaStream:          $('#peerMediaStream'),
 					playerHealth:             $('#playerHealth'),
 					opponentHealth:           $('#opponentHealth'),
-					gameplayArea:             $('#gameplayArea')
+					gameplayArea:             $('#gameplayArea'),
+					playerHealthBar:          $('#playerHealthBar'),
+					opponentHealthBar:        $('#opponentHealthBar')
 					
 				});
 				
@@ -198,8 +201,8 @@
 					
 					<video id="peerMediaStream"></video>
 					
-					<p>Player HP: <span id="playerHealth">?</span></p>
-					<p>Opponent HP: <span id="opponentHealth">?</span></p>
+					<p>Player HP: <span id="playerHealthBar" class="healthBar"><span id="playerHealth" class="healthLevel">?</span></span></p>
+					<p>Opponent HP: <span id="opponentHealthBar" class="healthBar"><span id="opponentHealth" class="healthLevel">?</span></span></p>
 					
 					<table id="charges"><tbody></tbody></table>
 					
