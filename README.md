@@ -15,7 +15,9 @@ The Incanter client relies on WebRTC for webcam access and peer-to-peer network 
 Server
 ------
 
-The Incanter server is a modified version of the [PeerJS](http://peerjs.com/) server, and runs using Node.js. The client is configured to expect the Incanter server to be available on the same IP address as the web server that served the client files to the browser.
+The Incanter server is a simple wrapper for the [PeerJS](http://peerjs.com/) server that enables peer discovery mode and specifies the path and port number, and runs using Node.js. The client is configured to expect the Incanter server to be available on the same IP address as the web server that served the client files to the browser.
+
+To install the server, simply run `npm install .` from the `server` directory, which will install the PeerJS server package and its dependencies. The server can then be run using `node server.js`.
 
 
 License and credits

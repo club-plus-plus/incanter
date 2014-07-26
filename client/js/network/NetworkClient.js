@@ -89,7 +89,7 @@ NetworkClient.prototype.retrievePeerList = function(callback)
 {
 	//Build the query URL
 	var protocol = 'http://';
-	var querySuffix = 'connected';
+	var querySuffix = 'peerjs/peers';
 	var url = protocol + this.client.options.host + ":" + this.client.options.port + this.client.options.path + querySuffix;
 	
 	//Retrieve the list of peers
