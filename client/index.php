@@ -139,13 +139,14 @@
 		<div id="awaitingWebcamContainer" class="fullscreenOverlay">
 			<div id="awaitingWebcam" class="overlayWindow">
 				<h2>Allow webcam access to continue</h2>
+				<h3>Note:<br><span class="highlight">microphone access</span> must be enabled, as motion detection is only enabled when the player is audibly incanting.</h3>
 			</div>
 		</div>
 		
 		<div id="lobbyInterfaceContainer" class="fullscreenOverlay">
 			<div id="lobbyInterface" class="overlayWindow">
 				
-				<h1>Incanter Local Network Lobby</h1>
+				<h1>Incanter Network Lobby</h1>
 				
 				<div class="lobbyLoading">
 					<img class="progress" src="./assets/images/progress.png" alt="Loading">

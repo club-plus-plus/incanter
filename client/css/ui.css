@@ -134,7 +134,7 @@ table#charges tr td img
 	float: right;
 }
 
-#lobbyInterface .lobbyRequest h2, #lobbyInterface .lobbyRequest p, #errorMessage h2, #awaitingWebcam h2, #gameOverScreen h2
+#lobbyInterface .lobbyRequest h2, #lobbyInterface .lobbyRequest p, #errorMessage h2, #awaitingWebcam h2, #awaitingWebcam h3, #gameOverScreen h2
 {
 	text-align: center;
 }
@@ -187,11 +187,22 @@ table#charges tr td img
 	background-color: #e8e8e8;
 }
 
-.overlayWindow h2
+.overlayWindow h2, .overlayWindow h3
 {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.3em;
+}
+
+.overlayWindow h3
+{
+	margin-top: 3em;
+	font-size: 1.1em;
+}
+
+.overlayWindow span.highlight
+{
+	color: #ff0000;
 }
 
 .overlayWindow img.progress
