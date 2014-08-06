@@ -3,7 +3,7 @@ Incanter
 
 Incanter is an augmented reality wizard battle game that runs right in your browser! Using motion detection, players charge elements (Air, Earth, Fire, Water, Light, and Dark) to craft spells to attack or counter their opponent. A webcam and a little imagination is all that's required for hours of spell-slinging fun!
 
-Please note that Incanter works best over a local network and has not yet been tested for online play.
+A live demo of Incanter is available at <http://clubplusplus.com/live/incanter/>.
 
 
 Client
