@@ -67,7 +67,7 @@ NetworkClient.prototype.getClientID = function() {
 	return this.clientID;
 }
 
-//Registers a new event lister
+//Registers a new event listener
 //[Event listeners are instances of callable that take a single argument]
 NetworkClient.prototype.on = function(eventName, listener)
 {
